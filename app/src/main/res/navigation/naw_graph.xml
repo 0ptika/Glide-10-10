@@ -14,5 +14,9 @@
         android:id="@+id/exampleFirstFragment"
         android:name="com.example.navigation_component.ExampleFirstFragment"
         android:label="fragment_example_first"
-        tools:layout="@layout/fragment_example_first" />
+        tools:layout="@layout/fragment_example_first" >
+        <action
+            android:id="@+id/action_exampleFirstFragment_to_exampleSecondFragments"
+            app:destination="@id/exampleSecondFragments" />
+    </fragment>
 </navigation>
