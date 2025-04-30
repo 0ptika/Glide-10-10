@@ -12,18 +12,11 @@ import com.example.navigation_component.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding : FragmentActivity
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-
-
-
          supportFragmentManager.findFragmentById(R.id.new_hots_fragment) as NavHostFragment
-
-
-
-
-
     }
 }
