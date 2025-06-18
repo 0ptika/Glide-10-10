@@ -16,4 +16,39 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
+    <TextView
+        android:id="@+id/textViewFact"
+        android:layout_width="99dp"
+        android:layout_height="34dp"
+        android:background="#E69090"
+        android:text="Text"
+        app:layout_constraintBottom_toTopOf="@+id/btnSecondFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ShowRandomFact"
+        app:layout_constraintBottom_toTopOf="@+id/btnSecondFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFact" />
+
+    <TextView
+        android:id="@+id/textViewID"
+        android:layout_width="49dp"
+        android:layout_height="20dp"
+        android:background="#D0A7A7"
+        android:text="iD"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.693" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

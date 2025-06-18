@@ -1,7 +1,6 @@
-package com.example.navigation_component
+package com.example.navigation_component.data
 
 import com.google.gson.annotations.SerializedName
-import kotlinx.serialization.Serializer
 
 data class FackBackResponse(
     @SerializedName("id") // 9c6617566115bdc3455bfe24d79dae7a
