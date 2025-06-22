@@ -4,5 +4,10 @@ import retrofit2.http.GET
 
 interface ApiService {
     @GET("/api/v2/facts/random")
-    suspend fun getFackt():FackBackResponse
+    suspend fun getFackt(): FackBackResponse
+
+    @GET("/get_memes")
+    suspend fun getMems():MemsRespons
 }
+
+

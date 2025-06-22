@@ -18,5 +18,17 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
          supportFragmentManager.findFragmentById(R.id.new_hots_fragment) as NavHostFragment
+
+        // create 20 products Product(title = "Parrot" , price = 100)
+        // create addapter and submit list of products
+        val listOfProduct = listOf<Product>(
+            Product("apply", 100),
+            Product("Cherry", 1000),
+            Product("Vaz", 1500)
+        )
+
+        val adapter = ExampleRecyclerAdapter()
+       // binding.                             **********************************************************
+
     }
 }

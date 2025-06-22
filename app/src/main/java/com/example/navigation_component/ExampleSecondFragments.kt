@@ -1,5 +1,7 @@
 package com.example.navigation_component
 
+
+import com.example.navigation_component.databinding.FragmentExampleSecondFragmentsBinding
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -9,9 +11,9 @@ import android.view.ViewGroup
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.example.navigation_component.data.RetrofitService
-import com.example.navigation_component.databinding.FragmentExampleSecondFragmentsBinding
 import kotlinx.coroutines.launch
 import kotlin.math.log
+
 
 class ExampleSecondFragments : Fragment() {
 
@@ -46,6 +48,7 @@ class ExampleSecondFragments : Fragment() {
         }
 
     }
+
 
 
 
