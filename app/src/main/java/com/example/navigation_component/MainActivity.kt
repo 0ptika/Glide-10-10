@@ -11,7 +11,7 @@ import androidx.navigation.fragment.NavHostFragment
 import com.example.navigation_component.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding : FragmentActivity
+    private lateinit var binding : ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         )
 
         val adapter = ExampleRecyclerAdapter()
-       // binding.                             **********************************************************
+        binding.rcProduct 
 
     }
 }

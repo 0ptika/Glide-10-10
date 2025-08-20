@@ -4,19 +4,23 @@ import android.R
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.navigation_component.data.Meme
+import com.example.navigation_component.data.MemsRespons
 import com.example.navigation_component.databinding.ExampleadapterBinding
 
 class ExampleRecyclerAdapter : RecyclerView.Adapter<ExampleRecyclerAdapter.ExampleViewHolder>() {
 
-    private val adpterList = mutableListOf<Product>()
+    private val adpterList = mutableListOf<Meme>()
 
     inner class ExampleViewHolder(private var binding: ExampleadapterBinding): RecyclerView.ViewHolder(binding.root) {
 
-        fun onBind(item: Product){
+        fun onBind(memeItem: Meme){
+            binding.tvPoructTitle.text = memeItem.name
+            binding.tvProductPrice.text = memeItem.url
         }
     }
 
-    fun sumbitList(list: List<Product>) {
+    fun sumbitList(list: List<Meme>) {
         adpterList.addAll(list)
 
     }

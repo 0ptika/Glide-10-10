@@ -31,10 +31,13 @@ class ExampleFirstFragment : Fragment() {
       }
         lifecycleScope.launch {
             try {
-                val respons = RetrofitService.apiService.getMems()
-                val listMeme  = respons.data.memes
-               // val adapter =
+                val response = RetrofitService.apiService.getMems()
+                val listMeme = response.data.memes
+                 val adapter = ExampleRecyclerAdapter()
+                binding.rcViewMems.adapter = adapter
+                adapter.sumbitList(listMeme)
             } catch (e: Exception){
+
 
             }
         }
