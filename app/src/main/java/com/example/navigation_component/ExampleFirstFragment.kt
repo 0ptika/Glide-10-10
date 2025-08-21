@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
-import com.example.navigation_component.data.MemsRespons
 import com.example.navigation_component.data.RetrofitService
 import com.example.navigation_component.databinding.FragmentExampleFirstBinding
 import kotlinx.coroutines.launch
@@ -39,6 +38,7 @@ class ExampleFirstFragment : Fragment() {
                 binding.rcViewMems.adapter = adapter
                 adapter.sumbitList(listMeme)
             } catch (e: Exception){
+                e.printStackTrace()
 
 
             }
