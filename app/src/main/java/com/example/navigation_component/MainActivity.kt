@@ -16,7 +16,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
          supportFragmentManager.findFragmentById(R.id.new_hots_fragment) as NavHostFragment
 
         // create 20 products Product(title = "Parrot" , price = 100)

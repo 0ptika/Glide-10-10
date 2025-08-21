@@ -1,6 +1,7 @@
 package com.example.navigation_component
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -33,6 +34,7 @@ class ExampleFirstFragment : Fragment() {
             try {
                 val response = RetrofitService.apiService.getMems()
                 val listMeme = response.data.memes
+                Log.d("AAA" , listMeme.toString())
                  val adapter = ExampleRecyclerAdapter()
                 binding.rcViewMems.adapter = adapter
                 adapter.sumbitList(listMeme)
