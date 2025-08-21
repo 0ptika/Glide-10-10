@@ -14,7 +14,7 @@ object  RetrofitService {
     val apiService:ApiService = retrofit.create(ApiService::class.java)
 
     private val retrofitMems: Retrofit = Retrofit.Builder().baseUrl(BASE_URL_MEMS).addConverterFactory(GsonConverterFactory.create()).build()
-    val apiServiceMems:ApiService = retrofit.create(ApiService::class.java)
+    val apiServiceMems:ApiService = retrofitMems.create(ApiService::class.java)
 
 
 
