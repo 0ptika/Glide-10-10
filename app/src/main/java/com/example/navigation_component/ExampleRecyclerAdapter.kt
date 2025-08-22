@@ -4,6 +4,7 @@ import android.R
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.navigation_component.data.Meme
 import com.example.navigation_component.data.MemsRespons
 import com.example.navigation_component.databinding.ExampleadapterBinding
@@ -17,6 +18,10 @@ class ExampleRecyclerAdapter : RecyclerView.Adapter<ExampleRecyclerAdapter.Examp
         fun onBind(memeItem: Meme){
             binding.tvPoructTitle.text = memeItem.name
             binding.tvProductPrice.text = memeItem.url
+            Glide
+                .with(binding.root.context)
+                .load(memeItem.url)
+                .into(binding.imageView);
         }
     }
 

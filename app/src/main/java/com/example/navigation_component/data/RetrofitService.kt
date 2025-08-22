@@ -7,8 +7,8 @@ import retrofit2.create
 
 
 object  RetrofitService {
-    private const val BASE_URL = "https://uselessfacts.jsph.pl"
-    private const val BASE_URL_MEMS = "https://api.imgflip.com"
+    private const val BASE_URL = "https://uselessfacts.jsph.pl/"
+    private const val BASE_URL_MEMS = "https://api.imgflip.com/"
 
     private val retrofit: Retrofit = Retrofit.Builder().baseUrl(BASE_URL).addConverterFactory(GsonConverterFactory.create()).build()
     val apiService:ApiService = retrofit.create(ApiService::class.java)

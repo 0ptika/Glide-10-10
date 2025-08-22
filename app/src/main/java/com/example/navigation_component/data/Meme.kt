@@ -8,7 +8,7 @@ data class Meme(
     val box_count: Int,
     @SerializedName("captions")
     val captions: Int,
-    @SerializedName("heihgt")
+    @SerializedName("height")
     val height: Int,
     @SerializedName("id")
     val id: String,

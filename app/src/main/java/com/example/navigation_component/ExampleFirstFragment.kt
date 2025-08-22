@@ -31,14 +31,15 @@ class ExampleFirstFragment : Fragment() {
       }
         lifecycleScope.launch {
             try {
-                val response = RetrofitService.apiService.getMems()
+                val response = RetrofitService.apiServiceMems.getMems()
                 val listMeme = response.data.memes
-                Log.d("AAA" , listMeme.toString())
+                listMeme.forEach { meme ->
+                    Log.d("MEME_TEST", "id=${meme.id}, name=${meme.name}, url=${meme.url}")
+                }
                  val adapter = ExampleRecyclerAdapter()
                 binding.rcViewMems.adapter = adapter
                 adapter.sumbitList(listMeme)
             } catch (e: Exception){
-                e.printStackTrace()
 
 
             }
